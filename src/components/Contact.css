@@ -1,0 +1,69 @@
+/* Basic reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Full screen layout */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height */
+  text-align: center;
+  position: relative;
+}
+
+/* Background styling */
+.contact-page > .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send background behind content */
+}
+
+/* Content container */
+.contact-content {
+  z-index: 1; /* Ensure content is above background */
+  color: white; /* Text color */
+  padding: 20px;
+}
+
+/* Heading styling */
+.contact-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Contact details container */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between items */
+}
+
+/* Individual contact items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  font-size: 18px;
+}
+
+/* Icon styling */
+.contact-item svg {
+  color: #ff5733; /* Icon color */
+}
+
+/* Link styling */
+.contact-item a {
+  color: #ff5733;
+  text-decoration: none;
+  font-weight: bold;
+}

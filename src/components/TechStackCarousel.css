@@ -1,0 +1,77 @@
+.tech-carousel-container {
+    padding: 1rem; /* Adjust padding */
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* Hide content outside the container */
+    position: relative;
+    width: 100%;
+    max-width: 80%; /* Optional: Limit the container width */
+    margin: 0 auto; /* Center the container */
+    height: 200px; /* Adjust height to fit the header and carousel */
+    box-sizing: border-box; /* Ensure padding doesn't affect total size */
+  }
+  
+  .carousel-heading {
+    font-size: 2rem;
+    margin: 0; /* Remove default margin */
+    padding: 0.5rem 0; /* Add padding for spacing */
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 2rem); /* Ensure the wrapper doesn't overlap the heading */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    position: absolute;
+    animation: bounce-animation 4s ease-in-out infinite; /* Bouncing animation */
+    gap: 2rem;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack icon and name vertically */
+  }
+  
+  .tech-icon {
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tech-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .tech-name {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  
+  /* Bouncing animation */
+  @keyframes bounce-animation {
+    0% {
+      transform: translateX(0); /* Start at the left edge */
+    }
+    50% {
+      transform: translateX(calc(100% - 100px)); /* Stop at the right edge */
+    }
+    100% {
+      transform: translateX(0); /* Return to the left edge */
+    }
+  }
+  
