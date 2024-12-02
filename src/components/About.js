@@ -10,7 +10,6 @@ const About = () => {
       <div className="about-container">
         {/* Avatar and Introduction Section */}
         <div className="about-header">
-          {/* Avatar */}
           <div className="avatar-container">
             <img
               src="/images/avatar.png"

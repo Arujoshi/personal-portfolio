@@ -30,4 +30,4 @@ const TechStackCarousel = () => {
     );
   };
     
-    export default TechStackCarousel;
+export default TechStackCarousel;
