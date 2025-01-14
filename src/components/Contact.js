@@ -12,11 +12,7 @@ const Contact = () => {
         <div className="contact-details">
           <div className="contact-item">
             <FaEnvelope size={30} />
-            <span>Email: joshiaradhana76@gmail.com</span>
-          </div>
-          <div className="contact-item">
-            <FaPhoneAlt size={30} />
-            <span>Phone: +1234567890</span>
+            <span>Email: aradhanajoshi498@gmail.com</span>
           </div>
           <div className="contact-item">
             <FaLinkedin size={30} />
