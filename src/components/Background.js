@@ -1,6 +1,6 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import "./Homes.css";
+import "./Home.css";
 
 const Background = () => {
   const particlesInit = async (main) => {
