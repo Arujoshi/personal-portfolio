@@ -5,7 +5,7 @@ import Background from "./Background";
 import Navbar from "./Navbar";
 import "./Home.css"; // Ensure CSS for styling
 
-const Homes = () => {
+const Home = () => {
 
   const facts = [
     "I love solving puzzles!",
@@ -125,4 +125,4 @@ useEffect(() => {
   );
 };
 
-export default Homes;
+export default Home;
