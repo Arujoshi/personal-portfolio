@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Background from "./Background";
-import Homes from "./Homes";
+import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 
@@ -12,7 +12,7 @@ const Layout = () => {
       <Navbar />
       <div className="pages-container">
         <section className="page" id="home">
-          <Homes />
+          <Home />
         </section>
         <section className="page" id="about">
           <About />
