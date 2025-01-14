@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import Background from "./Background"; // Make sure this is the correct path
-import { FaEnvelope, FaPhoneAlt, FaLinkedin } from "react-icons/fa"; // Importing the relevant icons from react-icons
+import { FaEnvelope, FaLinkedin, FaDownload } from "react-icons/fa"; // Importing the relevant icons from react-icons
 
 const Contact = () => {
   return (
@@ -12,11 +12,7 @@ const Contact = () => {
         <div className="contact-details">
           <div className="contact-item">
             <FaEnvelope size={30} />
-            <span>Email: joshiaradhana76@gmail.com</span>
-          </div>
-          <div className="contact-item">
-            <FaPhoneAlt size={30} />
-            <span>Phone: +1234567890</span>
+            <span>Email: aradhanajoshi498@gmail.com</span>
           </div>
           <div className="contact-item">
             <FaLinkedin size={30} />
@@ -30,6 +26,17 @@ const Contact = () => {
                 Aradhana Joshi
               </a>
             </span>
+          </div>
+          <div>
+            <a
+              style={{color:"whitesmoke"}}
+              href={`${process.env.PUBLIC_URL}/files/AradhanaResume.pdf`}
+              download="AradhanaResume.pdf"
+              className="download-resume"
+            >
+              Download My Resume &nbsp;
+              <FaDownload size={30} style={{ marginRight: "10px" }} />
+            </a>
           </div>
         </div>
       </div>

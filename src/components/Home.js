@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
 import Background from "./Background";
 import Navbar from "./Navbar";
-import "./Homes.css"; // Ensure CSS for styling
+import "./Home.css"; // Ensure CSS for styling
 
 const Homes = () => {
 

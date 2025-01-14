@@ -12,7 +12,7 @@ const About = () => {
         <div className="about-header">
           <div className="avatar-container">
             <img
-              src="/images/avatar.png"
+              src={`${process.env.PUBLIC_URL}/images/avatar.png`}
               alt="My Avatar"
               className="avatar-image"
             />
