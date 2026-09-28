@@ -27,7 +27,7 @@ const projects = [
     featured: true,
     github: "https://github.com/Arujoshi/ecommerce", // TODO: add your GitHub link
     demo: "", // TODO: add your live site link
-    video: "https://drive.google.com/file/d/1pmN-gu0WdZKgTShwBlEU8CaN0amDERht/view?usp=sharing", // TODO: add your website demo video
+    video:"https://drive.google.com/file/d/1pmN-gu0WdZKgTShwBlEU8CaN0amDERht/preview", // TODO: add your website demo video
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const projects = [
     monogram: "TF",
     github: "https://github.com/Arujoshi/Saffron-table",
     demo: "",
-    video: "https://drive.google.com/file/d/1YX-edg4sEPmbwTshvTzpc95J__tYUQbG/view?usp=drive_link",
+    video: "https://drive.google.com/file/d/1YX-edg4sEPmbwTshvTzpc95J__tYUQbG/preview",
   },
   {
     id: 3,
