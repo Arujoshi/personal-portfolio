@@ -30,7 +30,7 @@ const Contact = () => {
           <div>
             <a
               style={{color:"whitesmoke"}}
-              href={`${process.env.PUBLIC_URL}/files/AradhanaResume.pdf`}
+              href={`${process.env.PUBLIC_URL}/files/AradhanaJoshi4YOE.pdf`}
               download="AradhanaResume.pdf"
               className="download-resume"
             >
