@@ -27,7 +27,8 @@ const projects = [
     featured: true,
     github: "https://github.com/Arujoshi/ecommerce", // TODO: add your GitHub link
     demo: "", // TODO: add your live site link
-    video:"https://drive.google.com/file/d/1pmN-gu0WdZKgTShwBlEU8CaN0amDERht/preview", // TODO: add your website demo video
+    video:
+      "https://drive.google.com/file/d/1pmN-gu0WdZKgTShwBlEU8CaN0amDERht/preview", // TODO: add your website demo video
   },
   {
     id: 2,
@@ -40,9 +41,11 @@ const projects = [
     accent: "#4c9aff",
     url: "",
     monogram: "TF",
+    featured: true,
     github: "https://github.com/Arujoshi/Saffron-table",
     demo: "",
-    video: "https://drive.google.com/file/d/1YX-edg4sEPmbwTshvTzpc95J__tYUQbG/preview",
+    video:
+      "https://drive.google.com/file/d/1YX-edg4sEPmbwTshvTzpc95J__tYUQbG/preview",
   },
   {
     id: 3,
@@ -50,7 +53,7 @@ const projects = [
     tagline: "Static yoga studio website [Demo Project]",
     description:
       "A calm, fully responsive landing page for a yoga studio featuring class schedules, instructor profiles and a pricing section. Built to showcase clean layout, smooth animations and pixel-precise front-end work.",
-    tech: ["HTML","CSS","JavaScript"],
+    tech: ["HTML", "CSS", "JavaScript"],
     category: "Frontend",
     accent: "#81c784",
     url: "https://arujoshi.github.io/yoga-website/",
@@ -65,7 +68,7 @@ const projects = [
     tagline: "Website for a local burger shop [Demo Project]",
     description:
       "A bold, mouth-watering website for a burger shop with a visual menu, combo offers, location details and a one-tap call-to-order button, designed to turn hungry visitors into customers.",
-    tech: ["HTML","CSS","JavaScript"],
+    tech: ["HTML", "CSS", "JavaScript"],
     category: "Frontend",
     accent: "#e57cd8",
     url: "https://arujoshi.github.io/burger/",
@@ -80,7 +83,7 @@ const projects = [
     tagline: "Elegant jewellery brand website [Demo Project]",
     description:
       "A refined, icon-led website for a jewellery brand with collection galleries, product detail views and an enquiry form. Designed with a premium look and smooth transitions to reflect the brand's luxury feel.",
-    tech: ["HTML","CSS","JavaScript"],
+    tech: ["HTML", "CSS", "JavaScript"],
     category: "Frontend",
     accent: "#ff5733",
     url: "https://arujoshi.github.io/zevar/",
@@ -140,7 +143,23 @@ const ProjectCard = ({ project }) => {
 
         <div className="browser-screen">
           {project.video ? (
-            <video src={project.video} controls playsInline preload="metadata" />
+            project.video.includes("drive.google.com") ||
+            project.video.includes("youtube.com/embed") ? (
+              <iframe
+                src={project.video}
+                title={`${project.title} demo`}
+                loading="lazy"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <video
+                src={project.video}
+                controls
+                playsInline
+                preload="metadata"
+              />
+            )
           ) : (
             <div className="video-placeholder">
               <span className="monogram">{project.monogram}</span>
@@ -182,7 +201,10 @@ const ProjectCard = ({ project }) => {
               <FaExternalLinkAlt /> Live site
             </a>
           ) : (
-            <span className="card-btn ghost disabled" title="Live link coming soon">
+            <span
+              className="card-btn ghost disabled"
+              title="Live link coming soon"
+            >
               <FaExternalLinkAlt /> Live site
             </span>
           )}
@@ -205,8 +227,8 @@ const Projects = () => {
           <p className="projects-eyebrow">&#47;&#47; what I've built</p>
           <h1 className="projects-heading">Projects</h1>
           <p className="projects-sub">
-            A selection of things I have designed and built - from
-            full-stack platforms to focused backend services.
+            A selection of things I have designed and built - from full-stack
+            platforms to focused backend services.
           </p>
         </header>
 
